@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+    <table class="table table-dark">
+        <tr>
+            <th>Class ID</th>
+
+        </tr>
+        {% for i in class_all %}
+        <tr>
+            <td><a href="{% url 'student-detail' i.class_id %}">{{ i.class_id }}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+
+
+
+
+
+
+
+
+{% endblock %}

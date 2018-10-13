@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+   <table class="table table-dark">
+        <tr>
+            <th>Name</th>
+            <th>Roll</th>
+            <th>Gender</th>
+            <th>Semester</th>
+        </tr>
+        {% for std in students %}
+        <tr>
+            <td>{{ std.name }}</td>
+            <td>{{ std.roll }}</td>
+            <td>{{ std.gender }}</td>
+            <td>{{ std.std_class }}</td>
+
+
+        </tr>
+        {% endfor %}
+    </table>
+
+
+
+{% endblock %}
+
+
+
+

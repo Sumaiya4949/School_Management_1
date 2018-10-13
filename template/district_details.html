@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% block content %}
+<table class="table table-dark">
+    <th>
+        <tr>Name </tr>
+        <tr>Area </tr>
+        <tr>Population </tr>
+    </th>
+
+   {% for i in dic_details %}
+     <tr>
+     <td><a href="{% url 'district-school' i.distric_name  %}"> {{i.distric_name}}</td>
+     <td>{{i.distric_area}}</td>
+     <td>{{i.distric_population}}</td>
+
+
+     </tr>
+   {% endfor %}
+ </table>
+ {% endblock %}
+
+</body>
+</html>

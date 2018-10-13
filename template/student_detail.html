@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+{% if student %}
+
+ <table class="table table-dark">
+        <tr>
+            <th>Name</th>
+        </tr>
+{% for std in student %}
+<tr>
+            <td>{{ std.name }}</td>
+</tr>
+     {% endfor %}
+ </table>
+
+ {% else %}
+ <h1>No Student Found</h1>
+
+{% endif %}
+
+{% endblock %}

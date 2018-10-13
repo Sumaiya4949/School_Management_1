@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <table class="table table-red">
+        <tr>
+            <th>Roll</th>
+            <th>GPA</th>
+        </tr>
+        {% for i in students_all %}
+            <tr>
+                <td><a href="{% url 'student-detail' i.student_roll %}">{{i.student_roll}}</a></td>
+                <td>{{i.student_gpa}}</td>
+            </tr>
+        {% endfor %}
+
+
+    </table>
+
+
+
+
+{% endblock %}

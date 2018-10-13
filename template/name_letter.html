@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+{% if name %}
+{% for i in name %}
+{{i.name}}
+<br>
+{% endfor %}
+{% else %}
+<p>Name not found</p>
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+
+
+    {% for i in dictricts %}
+      <a href="{% url "district_details" %}"> {{ i.distric_name }}
+    <br>
+
+    {% endfor %}
+
+</body>
+</html>

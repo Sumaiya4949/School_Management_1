@@ -1,0 +1,28 @@
+<table class="table table-dark">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>District</th>
+            <th>Address</th>
+            <th>Stablished Date</th>
+        </tr>
+        {% for i in details %}
+            <tr>
+                <td>{{ i.name }}</td>
+                <td>{{ i.email }}</td>
+                <td>{{ i.phone }}</td>
+                <td>{{ i.district }}</td>
+                <td>{{ i.address }}</td>
+                <td>{{ i.stablished_date }}</td>
+
+
+            </tr>
+
+
+        {% endfor %}
+
+    </table>
+
+
+
